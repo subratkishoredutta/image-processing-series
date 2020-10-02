@@ -21,6 +21,7 @@ cv2.createTrackbar("L-V","Trackbars",0,255,nothing)
 cv2.createTrackbar("U-H","Trackbars",179,179,nothing)
 cv2.createTrackbar("U-S","Trackbars",255,255,nothing)
 cv2.createTrackbar("U-V","Trackbars",255,255,nothing)
+
 img = cv2.imread("path")##give the path to the image
 
 while True:
@@ -46,13 +47,7 @@ while True:
          break
 
 
-cv2.destroyAllWindows()
+cv2.imwrite("mask.jpg",mask)## saves the mask.
 
-
-hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-mask =cv2.inRange(hsv,np.array([28,111,190]),np.array([179,255,255]))
-cv2.imshow("mask",mask)
-cv2.imwrite("mask.jpg",mask)
-cv2.waitKey(0)
 cv2.destroyAllWindows()
 
