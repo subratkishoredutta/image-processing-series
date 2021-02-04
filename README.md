@@ -7,7 +7,7 @@ description of the files:
 
 ##movement detection and localisation using heatmap
 
-4.heatmap.py: the script on running produces heatmap over the actual image covering those regions where any movement is observed. to create the heatmap feature map of intermediate layer in resnet50 architecture is taken.
+ 4.heatmap.py: the script on running produces heatmap over the actual image covering those regions where any movement is observed. to create the heatmap feature map of intermediate layer in resnet50 architecture is taken.
 
 
 ![4wn7ls](https://user-images.githubusercontent.com/42265196/106893085-0a503400-6713-11eb-9c38-de340fd8739b.gif)
